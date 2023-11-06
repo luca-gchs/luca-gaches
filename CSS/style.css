@@ -5,7 +5,7 @@
 /*style du header de la page index*/
 
 body {
-    background-image: url("/CSS/wallpaperHome.jpg");
+    background-image: url("./wallpaperHome.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family:'Roboto';
