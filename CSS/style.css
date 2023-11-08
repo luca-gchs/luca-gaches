@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 
-/*style du header de la page index*/
+/*style de la barre de navigation*/
 
 body {
   background-image: url("../assets/indexHome/wallpaperHome.png");
@@ -94,4 +94,19 @@ p {
     80% {margin-top: -5.62rem;}
     90% {margin-top: 0;}
     100% {margin-top: 0;}
+  }
+
+  /*style de la page CV*/
+  .cvPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 3.3%;
+  }
+
+  .cvPage img {
+    border: 5px solid rgb(205, 205, 205); 
+    border-radius: 10px; 
   }
