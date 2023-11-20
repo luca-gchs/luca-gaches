@@ -111,10 +111,22 @@ p {
     border-radius: 10px; 
   }
 
+/* style de la page projet */
 
-
-
-
-
+.projetPro {
+  /* background color du fond de la box */
+  background-color: #fff; 
+  /* couleur du texte */
+  color: #000; 
+  /* type font et bold */
+  font-family: 'Poppins';  
+  font-weight: 500;
+ 
+  padding: 20px; 
+  margin-top: 200px;
+  /* border style gris et arrondi */
+  border: 5px solid rgb(205, 205, 205); 
+  border-radius: 10px; 
+}
 
 
