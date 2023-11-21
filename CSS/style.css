@@ -120,10 +120,15 @@ p {
   color: #000; 
   /* type font et bold */
   font-family: 'Poppins';  
-  font-weight: 500;
- 
+  font-weight: 600;
+  font-size: 17.5px;
+  text-align: center;
+ /* distance entre box et texte */
   padding: 20px; 
-  margin-top: 200px;
+  /* distance avec bordure de page plus formalisme de la boîte */
+  margin-top: 130px;
+  margin-right: 300px;
+  margin-left: 300px;
   /* border style gris et arrondi */
   border: 5px solid rgb(205, 205, 205); 
   border-radius: 10px; 
