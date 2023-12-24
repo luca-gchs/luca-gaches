@@ -1,137 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
 
 /*style de la barre de navigation*/
 
 body {
   background-image: url("../assets/indexHome/wallpaperHome.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
-  font-family:'Roboto';
+  font-family: "Roboto";
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-
+.tm-nav {
+  display: flex;
+}
+.tm-nav div {
+  display: flex;
+}
 .tm-nav a {
   /*définit la police*/
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   /*espace entre chaque mot*/
   margin: 0 30px;
+  margin-top: 20px;
   /* pour enlever l'underline*/
   text-decoration: none;
   /* couleur du texte */
   color: white;
-  /* //taille du texte */
+  /* taille du texte */
   font-size: 20px;
   /* gras du texte */
-   font-weight: 500;
+  font-weight: 500;
 }
 
-.tm-nav a:hover{
-  color: #3e99ff ;
+.tm-nav a:hover {
+  color: #3e99ff;
 }
 
 .header-inner {
-    /* centre les éléments */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* centre les éléments */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 /*style du main de la page index*/
 
-
 p {
-    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-  }
-  .presentationAnime {
-    color: #e5e5e5;
-    font-size: 2.26rem;
-    text-transform: uppercase;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .animation {
-    height:50px;
-    overflow:hidden;
-    margin-left: 1rem;
-  }
-  
-  .animation div div {
-    padding: 0.25rem 0.75rem;
-    height:2.81rem;
-    margin-bottom: 2.81rem;
-    display:inline-block;
-  }
-  
-  .animation div:first-child {
-    animation: text-animation 9.7s infinite;
-  }
-  
-  .premier div {
-    background-color:#20a7d8;
-  }
-  .second div {
-    background-color:#CD921E;
-  }
-  .troisieme div {
-    background-color:#c10528;
-  }
-  
-  @keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -5.62rem;}
-    30% {margin-top: -5.62rem;}
-    40% {margin-top: -11.24rem;}
-    60% {margin-top: -11.24rem;}
-    70% {margin-top: -5.62rem;}
-    80% {margin-top: -5.62rem;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-  }
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+.presentationAnime {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  /*style de la page CV*/
-  .cvPage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 3.3%;
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation div div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 9.7s infinite;
+}
+
+.premier div {
+  background-color: #20a7d8;
+}
+.second div {
+  background-color: #cd921e;
+}
+.troisieme div {
+  background-color: #c10528;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
   }
-
-  .cvPage img {
-    border: 5px solid rgb(205, 205, 205); 
-    border-radius: 10px; 
+  10% {
+    margin-top: 0;
   }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-/* style de la page projet */
+/*style de la page CV*/
+.cvPage {
+  max-width: 600px;
+  min-width: 350px;
+  margin-top: 3.3%;
+}
 
-.projetPro {
-  /* background color du fond de la box */
-  background-color: #fff; 
-  /* couleur du texte */
-  color: #000; 
-  /* type font et bold */
-  font-family: 'Poppins';  
-  font-weight: 600;
-  font-size: 17.5px;
-  text-align: center;
- /* distance entre box et texte */
-  padding: 20px; 
-  /* distance avec bordure de page plus formalisme de la boîte */
-  margin-top: 130px;
-  margin-right: 300px;
-  margin-left: 300px;
-  /* border style gris et arrondi */
-  border: 5px solid rgb(205, 205, 205); 
+.cvPage img {
+  width: 100%;
+  border: 5px solid rgb(205, 205, 205);
   border-radius: 10px; 
 }
 
+.cv_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* style de la page projet */
+
+.projectWrap {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.projetPro {
+  /* background color du fond de la box */
+  background-color: #fff;
+  /* couleur du texte */
+  color: #000;
+  /* type font et bold */
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 17.5px;
+  text-align: center;
+  /* distance entre box et texte */
+  padding: 20px;
+  /* distance avec bordure de page plus formalisme de la boîte */
+  /* margin-top: 130px;
+  margin-right: 300px;
+  margin-left: 300px; */
+  /* border style gris et arrondi */
+  border: 5px solid rgb(205, 205, 205);
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/*footer styles*/
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  background-color: #000; 
+}
+
+.footer-wrap img {
+  max-width: 37px;
+  max-height: 37px;
+}
+
+.footer-wrap div {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.footer-wrap a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Media query*/
+@media (max-width: 550px) {
+  .presentationAnime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentationAnime p {
+    text-align: center;
+  }
+
+  .animation {
+    font-size: 22px;
+    height: 35px;
+    width: 300px;
+  }
+
+  .title_anime {
+    font-size: 35px;
+  }
+
+  .tm-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tm-nav a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .tm-nav div {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projetPro {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    font-size: 15px;
+  }
+
+  .cvPage img {
+    margin-top: 50px;
+    max-width: 350px;
+  }
+}

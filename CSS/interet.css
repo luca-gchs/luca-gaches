@@ -18,7 +18,8 @@ body {
   /*définit la police*/
   font-family: "Poppins", sans-serif;
   /*espace entre chaque mot*/
-  margin: 0 30px;
+  margin: 0 28px;
+  margin-top: 15px;
   /* pour enlever l'underline*/
   text-decoration: none;
   /* couleur du texte */
@@ -31,6 +32,16 @@ body {
 
 .tm-nav a:hover {
   color: #3e99ff;
+}
+/*fix header on one row*/
+.tm-nav {
+  display: flex;
+  justify-content: center;
+
+}
+
+.tm-nav div {
+  display: flex;
 }
 
 .header-inner {
@@ -114,5 +125,42 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 550px) {
+  .interet img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .interetRight,
+  .interetRight {
+    margin: 0;
+    padding: 0;
+  }
 
+  .descr-wrap {
+    max-width: 200px;
+  }
 
+  .interet {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  /*header for phone*/
+  .tm-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tm-nav a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .tm-nav div {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
